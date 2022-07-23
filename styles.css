@@ -1,6 +1,9 @@
-#elemento-1 {
-    color: red;
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-ul #elemento-1 {
-    font-size: 2rem;
+
+.galeria img {
+    width: 300px;
 }
