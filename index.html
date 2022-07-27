@@ -1,24 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema grid de Bootstrap</title>
+    <title>Elementos de Interés en Bootstrap</title>
     <link rel="stylesheet" href="styles.css">
     <!-- CDN Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">Contenedor 1</div>
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">Contenedor 2</div>
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">Contenedor 3</div>
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">Contenedor 4</div>
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">Contenedor 5</div>
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">Contenedor 6</div>
+    <div class="container">
+        <!-- Jumbotron -->
+        <div class="bg-light p-5 rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+                <p class="col-md-8 fs-4">
+                    Using a series of utilities, you can create this jumbotron, just
+                    like the one in previous versions of Bootstrap. Check out the
+                    examples below for how you can remix and restyle it to your liking.
+                </p>
+                <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Example
+                    button</button>
+            </div>
+        </div>
+        <!-- Formulario -->
+        <form class="border p-4">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="mb-3">
+                <label for="telefono" class="form-label">Telefono</label>
+                <input type="number" class="form-control" id="telefono">
+            </div>
+            <!-- Tarjeta -->
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="card">
+            <div class="card-header">Eddie Huancahuire Velasquez</div>
+            <div class="card-body">
+                Frontend developer junior who wants to improve their skills every day.
+            </div>
+            <div class="card-footer">
+                ejhuancahuire@gmail.com
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Cuerpo del modal
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- CDN Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
