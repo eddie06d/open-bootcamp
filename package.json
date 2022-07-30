@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/eddie06d/open-bootcamp/issues"
   },
-  "homepage": "https://github.com/eddie06d/open-bootcamp#readme"
+  "homepage": "https://github.com/eddie06d/open-bootcamp#readme",
+  "dependencies": {
+    "winston": "^3.8.1"
+  }
 }
